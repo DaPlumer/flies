@@ -1,0 +1,9 @@
+{
+  "block.flies.fly_trap_maw": "Fly Trap",
+  "block.flies.fly_trap_stem": "Fly Trap Stem",
+  "item.flies.fly_spawn_egg": "Fly Spawn Egg",
+  "item.flies.fly_wings": "Fly Wings",
+  "item.flies.fly_wing": "Fly Wing",
+  "entity.flies.fly": "Fly",
+  "death.attack.fly_trap": "%1$s was digested"
+}

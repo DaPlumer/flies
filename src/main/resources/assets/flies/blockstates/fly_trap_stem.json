@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "flies:block/fly_trap_stem",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "flies:block/fly_trap_stem"
+    },
+    "facing=south": {
+      "model": "flies:block/fly_trap_stem",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "flies:block/fly_trap_stem",
+      "y": 270
+    }
+  }
+}

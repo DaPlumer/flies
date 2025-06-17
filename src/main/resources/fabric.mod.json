@@ -3,12 +3,14 @@
 	"id": "flies",
 	"version": "${version}",
 	"name": "Flies",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adding flies and fly traps to minecraft.",
 	"authors": [
-		"Me!"
+		"Daplumer42: Modeling, Implementation",
+		"Traditional-Name4732: Idea for mod"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"daplumer": "https://github.com/DaPlumer",
+		"idea_post": "https://www.reddit.com/r/minecraftsuggestions/comments/1l2i4w4/fly_and_fly_trap/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
@@ -17,13 +19,23 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "net.daplumer.flies.Flies",
-				"adapter": "kotlin"
+				"value": "net.daplumer.flies.Flies"
+			}
+		],
+		"client": [
+			{
+				"value": "net.daplumer.flies.FliesClient"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "net.daplumer.flies.FliesDataGen"
 			}
 		]
 	},
 	"mixins": [
-		"flies.mixins.json"
+		"flies.mixins.json",
+		"data_modification_utils.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",

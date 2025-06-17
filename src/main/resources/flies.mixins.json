@@ -3,9 +3,15 @@
 	"package": "net.daplumer.flies.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"FlyTrapAvoidMixin",
+		"FlyTrapKillMixin",
+		"ShearsMixin",
+		"WingsBreakMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
-	}
+	},
+	"client": [
+		"ElytraMixin"
+	]
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "pattern": [
+    " N ",
+    "WSW",
+    "W W"
+  ],
+  "key": {
+    "W": "flies:fly_wing",
+    "N": "minecraft:iron_nugget",
+    "S": "#c:strings"
+  },
+  "result": {
+    "count": 1,
+    "id": "flies:fly_wings"
+  }
+}

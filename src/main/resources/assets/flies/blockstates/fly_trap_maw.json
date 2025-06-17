@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "axis=x,open=open": {
+      "model": "flies:block/fly_trap_maw_open",
+      "y": 90
+    },
+    "axis=z,open=open": {
+      "model": "flies:block/fly_trap_maw_open"
+    },
+    "axis=x,open=closing": {
+      "model": "flies:block/fly_trap_maw_closing",
+      "y": 90
+    },
+    "axis=z,open=closing": {
+      "model": "flies:block/fly_trap_maw_closing"
+    },
+    "axis=x,open=closed": {
+      "model": "flies:block/fly_trap_maw_closed",
+      "y": 90
+    },
+    "axis=z,open=closed": {
+      "model": "flies:block/fly_trap_maw_closed"
+    }
+  }
+}

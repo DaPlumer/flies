@@ -1,0 +1,20 @@
+{
+  "values": [
+    "flies:fly_trap_maw",
+    "flies:fly_trap_stem",
+    "minecraft:clay",
+    "minecraft:farmland",
+    {
+      "id": "#minecraft:dirt",
+      "required": false
+    },
+    {
+      "id": "#c:gravels",
+      "required": false
+    },
+    {
+      "id": "#minecraft:terracotta",
+      "required": false
+    }
+  ]
+}

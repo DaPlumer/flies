@@ -1,0 +1,10 @@
+{
+  "type": "flies:fly_trap_feature",
+  "config": {
+    "height": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 3,
+      "min_inclusive": 1
+    }
+  }
+}
