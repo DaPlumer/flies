@@ -5,7 +5,6 @@ import net.daplumer.flies.datagen.LootTableProvider;
 import net.daplumer.flies.datagen.ModelRegistration;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.data.DataProvider;
 
 public class FliesDataGen implements DataGeneratorEntrypoint {

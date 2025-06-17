@@ -13,7 +13,6 @@ import net.daplumer.flies.worldgen.FlyTrapFeatureConfig;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
@@ -27,35 +26,21 @@ import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.EquippableComponent;
 import net.minecraft.entity.*;
-import net.minecraft.entity.attribute.DefaultAttributeRegistry;
 import net.minecraft.entity.damage.DamageType;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentAssetKeys;
 import net.minecraft.potion.Potion;
-import net.minecraft.potion.Potions;
 import net.minecraft.registry.*;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.resource.featuretoggle.FeatureManager;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 import net.minecraft.util.Unit;
-import net.minecraft.world.Heightmap;
 import net.minecraft.world.gen.GenerationStep;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.PlacedFeature;
-import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
-
-import java.util.List;
-import java.util.logging.Logger;
 
 public class Flies implements ModInitializer {
     public static final String MOD_ID = "flies";
-    public static final Logger LOGGER = Logger.getLogger(MOD_ID);
     public static final Registerer REGISTRY = Registerer.of(MOD_ID);
     public static final Potion LEVITATION_POTION =
             Registry.register(
@@ -134,9 +119,7 @@ public class Flies implements ModInitializer {
             FlyWings::new
     );
     @Override public void onInitialize() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((entries -> {
-            entries.addBefore(Blocks.BIG_DRIPLEAF,FLY_TRAP);
-        }));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((entries -> entries.addBefore(Blocks.BIG_DRIPLEAF,FLY_TRAP)));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.addBefore(Items.FEATHER, FLY_WING));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(entries -> entries.addBefore(Items.FOX_SPAWN_EGG,FLY_SPAWN_EGG));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.addAfter(Items.ELYTRA,FLY_WINGS));

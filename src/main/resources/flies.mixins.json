@@ -5,8 +5,7 @@
 	"mixins": [
 		"FlyTrapAvoidMixin",
 		"FlyTrapKillMixin",
-		"ShearsMixin",
-		"WingsBreakMixin"
+		"ShearsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

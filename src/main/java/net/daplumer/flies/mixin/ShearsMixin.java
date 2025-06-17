@@ -2,7 +2,6 @@ package net.daplumer.flies.mixin;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import net.daplumer.flies.Flies;
-import net.minecraft.block.Blocks;
 import net.minecraft.component.type.ToolComponent;
 import net.minecraft.item.ShearsItem;
 import net.minecraft.registry.entry.RegistryEntryList;
